@@ -1,10 +1,7 @@
-p {
-    text-align: justify;
-}
-
-.wp-block-tiptip-hyperlink-group-block, a,
-.block-editor-block-list__layout.is-root-container a {
-    text-decoration: none;
+section {
+    margin: 100px auto 0;
+    max-width: 800px;
+    width: 90%;
 }
 
 .card-shadow {
@@ -19,10 +16,31 @@ p {
     transform: scale(1.05);
 }
 
-.committee-hover-card {
-    margin-bottom: 25px;
+.max-width-20 {
+    max-width: 20% !important;
+}
+
+.img-full-width {
+    width: 100%;
+    object-fit: contain;
 }
 
 #sb_instagram {
     max-width: none;
+}
+
+/*Editor Styles*/
+
+.gcb-image__img {
+    width: 100%;
+}
+
+.genesis-custom-blocks-control {
+    display: flex;
+    align-items: center;
+}
+
+.components-base-control {
+    margin: 0;
+    width: 100%;
 }
