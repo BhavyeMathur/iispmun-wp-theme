@@ -30,6 +30,14 @@ img {
     max-width: 20% !important;
 }
 
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
 .img-full-width {
     width: 100%;
     object-fit: contain;
@@ -37,20 +45,4 @@ img {
 
 #sb_instagram {
     max-width: none;
-}
-
-/*Editor Styles*/
-
-.gcb-image__img {
-    width: 100%;
-}
-
-.genesis-custom-blocks-control {
-    display: flex;
-    align-items: center;
-}
-
-.components-base-control {
-    margin: 0;
-    width: 100%;
 }
