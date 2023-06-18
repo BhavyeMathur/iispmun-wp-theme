@@ -8,14 +8,14 @@ function register_iispmun_committees()
                 "singular_name" => "Committee"
             ),
 
-            "description" => "All the committees of the IISP MUN",
+            "description" => "All the committees at IISP MUN",
             "menu_icon" => "dashicons-admin-site",
 
-            "supports" => array("custom-fields", "title", "thumbnail"),
+            "supports" => array("custom-fields", "title", "thumbnail", "editor"),
             "rewrite" => array("slug" => "committees"),
 
             "public" => true,
-            "has_archive" => false,
+            "has_archive" => true,
             "show_in_rest" => true
         )
     );
