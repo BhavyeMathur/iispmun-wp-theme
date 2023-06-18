@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/iispmun.iml" filepath="$PROJECT_DIR$/.idea/iispmun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/iispmun-blocks/.idea/iispmun-blocks.iml" filepath="$PROJECT_DIR$/../../plugins/iispmun-blocks/.idea/iispmun-blocks.iml" />
     </modules>
   </component>
 </project>

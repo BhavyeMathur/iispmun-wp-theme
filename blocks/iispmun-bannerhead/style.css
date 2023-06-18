@@ -1,0 +1,51 @@
+.iispmun-title-section {
+    margin: 50px 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iispmun-title-container {
+    max-width: 600px;
+    width: 85%;
+
+    color: var(--wp--preset--color--purple);
+}
+
+.iispmun-watermark {
+    position: absolute;
+    width: 900px;
+
+    opacity: 8%;
+}
+
+.iispmun-supertitle {
+    font-size: 15px;
+}
+
+.iispmun-subtitle {
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.iispmun-date {
+    margin: 40px 0 5px 0;
+    font-size: 17px;
+}
+
+.iispmun-location {
+    font-size: 20px;
+}
+
+.iispmun-separator-container {
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.iispmun-separator-container img {
+    width: 25%;
+    min-width: 130px;
+}
