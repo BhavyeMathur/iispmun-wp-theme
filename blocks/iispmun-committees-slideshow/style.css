@@ -99,7 +99,7 @@
 .iispmun-committees-slideshow-card-title p {
     color: #3C3C4F;
     font-weight: 900;
-    font-size: 30px;
+    font-size: min(3.5vw, 40px);
 
     margin-bottom: -5px;
 }
@@ -112,6 +112,7 @@
 .iispmun-committees-slideshow-subtitle {
     display: flex;
     justify-content: space-around;
+    height: 10%;
 
     font-size: 14px;
     margin: 15px 0;
@@ -136,10 +137,22 @@
     .iispmun-committees-slideshow-card-container {
         width: 50%;
     }
+
+    .iispmun-committees-slideshow-card-title p {
+        font-size: 5vw;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .iispmun-committees-slideshow-card-container {
         width: 100%;
+    }
+
+    .iispmun-committees-slideshow-card-title p {
+        font-size: 12vw;
+    }
+
+    .iispmun-committees-slideshow-card-title small {
+        font-size: 4vw;
     }
 }
