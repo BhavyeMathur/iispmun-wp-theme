@@ -6,10 +6,6 @@
     max-width: 500px;
     width: 90%;
     margin: 20px auto;
-
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
 }
 
 .iispmun-features-container div {
@@ -17,10 +13,14 @@
 }
 
 .iispmun-features-container p {
+    color: white;
+    font-size: 18px;
+
     flex-grow: 1;
     padding: 5px 15px;
 
     transition: all 0.2s ease;
+    text-transform: uppercase;
 }
 
 .iispmun-features-container p:hover {

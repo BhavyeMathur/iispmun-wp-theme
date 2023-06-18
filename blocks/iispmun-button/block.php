@@ -1,5 +1,5 @@
 <button class="iispmun-button" style="border-radius: <?php block_field("border-radius") ?>px">
-    <b class="text-uppercase"><?php block_field("text"); ?><b>
+    <b class="text-uppercase"><?php block_field("text"); ?></b>
 </button>
 
 <style>

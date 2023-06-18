@@ -9,6 +9,16 @@ img {
     user-select: none;
 }
 
+.paragraph {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 2;
+    color: #666;
+
+    max-width: 800px;
+    margin: auto;
+}
+
 .card-shadow {
     box-shadow: 0 0 5px 5px rgb(0 0 0 / 5%);
 }
