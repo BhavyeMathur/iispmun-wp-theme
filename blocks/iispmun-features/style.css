@@ -1,0 +1,34 @@
+.iispmun-features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.iispmun-features-container div {
+    width: 3%;
+}
+
+.iispmun-features-container p {
+    flex-grow: 1;
+    padding: 5px 15px;
+
+    transition: all 0.2s ease;
+}
+
+.iispmun-features-container p:hover {
+    transform: scale(105%);
+}
+
+@media screen and (max-width: 560px) {
+    .iispmun-features-container {
+        font-size: 15px;
+    }
+}

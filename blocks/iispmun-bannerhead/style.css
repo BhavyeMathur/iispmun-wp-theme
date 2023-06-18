@@ -7,7 +7,7 @@
 }
 
 .iispmun-title-container {
-    max-width: 600px;
+    max-width: 700px;
     width: 85%;
 
     color: var(--wp--preset--color--purple);
@@ -15,27 +15,28 @@
 
 .iispmun-watermark {
     position: absolute;
-    width: 900px;
+    min-width: 900px;
+    width: 75%;
 
     opacity: 8%;
 }
 
 .iispmun-supertitle {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .iispmun-subtitle {
     line-height: 1.8;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .iispmun-date {
     margin: 40px 0 5px 0;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .iispmun-location {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .iispmun-separator-container {

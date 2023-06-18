@@ -6,8 +6,9 @@
     .iispmun-button {
         background: <?php block_field("color"); ?>;
         color: <?php block_field("border-color"); ?>;
+        font-size: 20px;
 
-        padding: 10px 20px;
+        padding: 10px 30px;
         border: <?php block_field("border-thickness"); ?>px solid <?php block_field("border-color"); ?>;
 
         transition: all 0.2s ease-out;

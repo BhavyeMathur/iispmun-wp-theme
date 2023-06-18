@@ -4,6 +4,11 @@ section {
     width: 90%;
 }
 
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
 .card-shadow {
     box-shadow: 0 0 5px 5px rgb(0 0 0 / 5%);
 }
