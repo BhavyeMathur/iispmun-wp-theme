@@ -1,9 +1,3 @@
-section {
-    margin: 100px auto 0;
-    max-width: 800px;
-    width: 90%;
-}
-
 img {
     pointer-events: none;
     user-select: none;

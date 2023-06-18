@@ -1,0 +1,145 @@
+#iispmun-committees-slideshow {
+    background: var(--wp--preset--color--dark-purple);
+    padding: 50px 0 0;
+}
+
+.iispmun-committees-slideshow-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.iispmun-committees-slideshow-wrapper i {
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    top: unset;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 44px;
+
+    background: #fff;
+    color: #000;
+}
+
+.iispmun-committees-slideshow-wrapper i:first-child {
+    left: -22px;
+}
+
+.iispmun-committees-slideshow-wrapper i:last-child {
+    right: -22px;
+}
+
+.iispmun-committees-slideshow-wrapper i:last-child::after {
+    content: " \2192"
+}
+
+.iispmun-committees-slideshow-wrapper i:first-child::after {
+    content: " \2190"
+}
+
+
+.iispmun-committees-slideshow {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+
+    display: flex;
+
+    width: 90%;
+    margin: auto;
+}
+
+.iispmun-committees-slideshow.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.iispmun-committees-slideshow-card-container {
+    width: 33.3%;
+    aspect-ratio: 0.7;
+    flex-shrink: 0;
+
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.iispmun-committees-slideshow-card {
+    background: white;
+
+    height: 90%;
+    width: 100%;
+}
+
+.iispmun-committees-slideshow-card img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.iispmun-committees-slideshow-card-title {
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.iispmun-committees-slideshow-card-title p {
+    color: #3C3C4F;
+    font-weight: 900;
+    font-size: 30px;
+
+    margin-bottom: -5px;
+}
+
+.iispmun-committees-slideshow-card-title small {
+    color: #71718D;
+    font-weight: 700;
+}
+
+.iispmun-committees-slideshow-subtitle {
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.iispmun-committees-slideshow-subtitle p {
+    text-align: center;
+}
+
+.iispmun-committees-slideshow-subtitle span:first-child {
+    color: #C3C3DB;
+    font-weight: 300;
+}
+
+.iispmun-committees-slideshow-subtitle span:last-child {
+    color: #fff;
+    font-weight: 600;
+    text-wrap: balance;
+}
+
+@media screen and (max-width: 800px) {
+    .iispmun-committees-slideshow-card-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .iispmun-committees-slideshow-card-container {
+        width: 100%;
+    }
+}
