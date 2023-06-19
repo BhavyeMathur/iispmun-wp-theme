@@ -1,0 +1,46 @@
+#countries {
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
+#countries h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    color: #3C3C4F;
+    margin-bottom: 50px;
+}
+
+.flags-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flag {
+    height: 100px;
+    aspect-ratio: 1.7;
+    margin: 15px 10px;
+
+    transition: all 0.2s ease;
+}
+
+.flag:hover {
+    transform: scale(1.05);
+}
+
+.flag img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+    box-shadow: 0 0 5px 5px rgb(0 0 0 / 8%);
+    border-radius: 3px;
+}
+
+@media(max-width: 370px) {
+    .flag {
+        height: 80px;
+    }
+}
