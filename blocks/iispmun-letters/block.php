@@ -5,16 +5,24 @@
 
     $args = array(
         "post_type" => "iispmun_people",
+        "post_type" => "iispmun_people",
     );
 
     $loop = new WP_Query($args);
+    $i = 0;
 
     while ($loop->have_posts()):
         $loop->the_post();
+
+        if (!get_field("has_letter")) {
+            continue;
+        }
+
+        $i++;
         $people[] = get_the_ID(); ?>
 
-        <div class="letter-container" style="display: none">
-            <div class="letter-dp">
+        <div class="letter-container" style="display: <?php echo ($i == 1 ? "flex" : "none") ?>">
+            <div class="letter-dp expand-on-hover">
                 <a href="<?php the_permalink(); ?>">
                     <img src="<?php the_field("profile_picture"); ?>">
                 </a>
@@ -33,11 +41,11 @@
     <div class="people-list">
         <?php
         $i = 0;
-        foreach ( $people as $post ) {
+        foreach ($people as $post) {
             ?>
-            <a class="dp-container" onclick="showLetter(<?php echo $i;?>)">
+            <a class="dp-container expand-on-hover" onclick="showLetter(<?php echo $i; ?>)">
                 <div>
-                    <img src="<?php the_field( "profile_picture", $post );?>">
+                    <img src="<?php the_field("profile_picture", $post); ?>">
                 </div>
             </a>
             <?php
