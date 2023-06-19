@@ -114,3 +114,14 @@ body {
 #sb_instagram {
     max-width: none;
 }
+
+.wp-block-post-title {
+    margin: 150px auto 80px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    text-align: center;
+    border-bottom: 3px solid #eee;
+
+    width: 80%;
+    max-width: 800px;
+}

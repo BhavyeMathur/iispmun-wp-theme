@@ -1,8 +1,8 @@
 // Adapted From https://www.codingnepalweb.com/draggable-image-slider-html-css-javascript/
 
-const carousel = document.querySelector(".iispmun-committees-slideshow");
-const carouselObjects = carousel.querySelectorAll(".iispmun-committees-slideshow-card-container")
-const arrowIcons = document.querySelectorAll(".iispmun-committees-slideshow-wrapper i");
+const carousel = document.querySelector(".iispmun-committees-cards-container");
+const carouselObjects = carousel.querySelectorAll(".iispmun-committees-card-container")
+const arrowIcons = document.querySelectorAll(".iispmun-committees-cards-wrapper i");
 
 let isDragStart = false;
 let isDragging = false;

@@ -1,0 +1,125 @@
+#iispmun-committees-slideshow {
+    background: var(--wp--preset--color--dark-purple);
+    padding: 50px 0 0;
+}
+
+.iispmun-committees-cards-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.iispmun-committees-cards-container {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+
+    display: flex;
+
+    width: 90%;
+    margin: auto;
+}
+
+.iispmun-committees-card-container {
+    width: 33.3%;
+    aspect-ratio: 0.7;
+    flex-shrink: 0;
+
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.iispmun-committee-card {
+    background: white;
+
+    height: 90%;
+    width: 100%;
+}
+
+.iispmun-committee-card img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.iispmun-committee-card-title {
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.iispmun-committee-card-title p {
+    color: #3C3C4F;
+    font-weight: 900;
+    font-size: min(3vw, 40px);
+
+    margin-bottom: -5px;
+}
+
+.iispmun-committee-card-title small {
+    color: #71718D;
+    font-weight: 700;
+}
+
+.iispmun-committee-card-subtitle {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.iispmun-committee-card-subtitle p {
+    text-align: center;
+}
+
+.iispmun-committee-card-subtitle span:first-child {
+    color: #C3C3DB;
+    font-weight: 300;
+}
+
+.iispmun-committee-card-subtitle span:last-child {
+    color: #fff;
+    font-weight: 600;
+    text-wrap: balance;
+}
+
+@media screen and (max-width: 800px) {
+    .iispmun-committees-card-container {
+        width: 50%;
+    }
+
+    .iispmun-committee-card-title p {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .iispmun-committees-cards-wrapper i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .iispmun-committees-card-container {
+        width: 100%;
+    }
+
+    .iispmun-committee-card-title p {
+        font-size: 12vw;
+    }
+
+    .iispmun-committee-card-title small {
+        font-size: 4vw;
+    }
+}
