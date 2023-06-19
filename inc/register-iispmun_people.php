@@ -11,7 +11,7 @@ function register_iispmun_people()
             "description" => "All the people involved in the IISP MUN",
             "menu_icon" => "dashicons-businessperson",
 
-            "supports" => array( "custom-fields", "title" ),
+            "supports" => array( "custom-fields", "title", "editor" ),
             "rewrite" => array( "slug" => "people" ),
 
             "public" => true,

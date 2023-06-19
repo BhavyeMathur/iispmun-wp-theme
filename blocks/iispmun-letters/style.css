@@ -1,0 +1,90 @@
+#letters {
+    background-color: #20202E;
+    padding-top: 50px;
+}
+
+#letters a {
+    text-decoration: none;
+}
+
+#letters .letter-container {
+    max-width: 800px;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+}
+
+#letters .letter-dp {
+    height: 200px;
+    aspect-ratio: 0.8;
+    box-shadow: -35px -35px 0 -20px #fff;
+    outline: 4px solid #7AB5B8;
+    outline-offset: 5px;
+
+    transition: all 0.2s ease;
+}
+
+#letters .letter-dp:hover {
+    transform: scale(1.1);
+}
+
+#letters .letter-dp img,
+#letters .dp-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#letters .letter-text {
+    margin-left: 80px;
+}
+
+#letters .name {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#letters .position {
+    text-transform: uppercase;
+    color: #71718D;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#letters .letter {
+    color: #ccc;
+    margin: 20px 0 0;
+    width: 100%;
+}
+
+#letters .people-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-image: linear-gradient(180deg, #20202E 50%, #121219 50%);
+    padding: 20px 0;
+}
+
+#letters .dp-container {
+    height: 120px;
+    aspect-ratio: 0.8;
+    padding: 0.3%;
+    margin: 1%;
+
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#letters .dp-container div {
+    width: 100%;
+    height: 100%;
+}
+
+#letters .dp-container:hover {
+    transform: scale(1.1);
+}
