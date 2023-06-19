@@ -101,6 +101,10 @@ body {
     max-width: 20% !important;
 }
 
+.max-width-800 {
+    max-width: 800px !important;
+}
+
 .width-30 {
     width: 30%;
 }
