@@ -1,0 +1,19 @@
+.iispmun-committees-cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.iispmun-committees-cards-container {
+    width: 100%;
+}
+
+.iispmun-committee-card-subtitle {
+    font-size: 13px;
+}
+
+@media screen and (min-width: 800px) {
+    .iispmun-committees-card-container {
+        width: 33%;
+    }
+}

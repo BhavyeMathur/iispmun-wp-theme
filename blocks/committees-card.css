@@ -60,7 +60,7 @@
 .iispmun-committee-card-title p {
     color: #3C3C4F;
     font-weight: 900;
-    font-size: min(3vw, 40px);
+    font-size: min(2.5vw, 35px);
 
     margin-bottom: -5px;
 }
@@ -101,12 +101,6 @@
 
     .iispmun-committee-card-title p {
         font-size: 5vw;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .iispmun-committees-cards-wrapper i {
-        display: none;
     }
 }
 
