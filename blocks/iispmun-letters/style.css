@@ -84,6 +84,11 @@
         align-items: center;
     }
 
+    #letters .letter {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
     #letters .letter-dp {
         width: 200px;
         height: auto;

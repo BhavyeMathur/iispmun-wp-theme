@@ -59,23 +59,25 @@
 }
 
 #press p {
-    margin-top: 20px;
+    margin: 20px 0 0;
     width: 100%;
 }
 
 #press h3 {
     font-weight: 900;
+    color: #3C3C4F;
 }
 
 @media(max-width: 992px) {
     #press .text {
-        margin-top: 40px;
-        padding-right: 40px;
+        margin: 40px auto 0;
+        padding: 0;
+        width: 80%;
     }
 
     #press .thumbnail {
         width: 60%;
-        margin-left: 50px;
+        margin: auto;
     }
 }
 
