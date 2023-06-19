@@ -1,5 +1,4 @@
 <section id="countries">
-    <h2>Countries Represented at Indus</h2>
     <div class="flags-container">
         <?php
         $images = acf_photo_gallery("countries", get_the_ID());

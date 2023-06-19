@@ -1,15 +1,6 @@
 #countries {
-    margin: 100px auto;
+    margin: 0 auto;
     max-width: 1000px;
-}
-
-#countries h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    color: #3C3C4F;
-    margin-bottom: 50px;
 }
 
 .flags-container {

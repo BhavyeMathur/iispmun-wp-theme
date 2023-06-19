@@ -1,0 +1,93 @@
+#press {
+    padding: 10px 0;
+}
+
+#press .container {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+#press:nth-of-type(even) {
+    background-color: #20202E;
+}
+
+#press:nth-of-type(even) h3,
+#press:nth-of-type(even) .read-more {
+    color: #fff;
+}
+
+#press .row {
+    align-items: center;
+    display: flex;
+}
+
+#press .text {
+    padding-left: 50px
+}
+
+#press .thumbnail-container {
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+#press .thumbnail-container:hover {
+    transform: scale(1.1);
+}
+
+#press .thumbnail {
+    background: #61B6BB;
+    padding: 2%;
+}
+
+#press .thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+#press .author {
+    color: #6E5E9F;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#press .date {
+    color: #61B6BB;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    margin-left: 10px;
+}
+
+#press p {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#press h3 {
+    font-weight: 900;
+}
+
+@media(max-width: 992px) {
+    #press .text {
+        margin-top: 40px;
+        padding-right: 40px;
+    }
+
+    #press .thumbnail {
+        width: 60%;
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 576px) {
+    #press .thumbnail {
+        width: 90%;
+        margin: auto;
+    }
+
+    #press .text {
+        width: 90%;
+        margin: 40px auto auto;
+        padding: 0;
+    }
+}
