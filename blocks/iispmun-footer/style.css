@@ -1,6 +1,7 @@
 #footer {
     background: var(--dark-purple);
     padding: 30px 5%;
+    max-width: none;
 }
 
 #footer header {
@@ -55,13 +56,16 @@
 #footer .sub-menu {
     flex-direction: column;
     margin-top: 15px;
-    color: var(--light-purple);
 }
 
 #footer .sub-menu li {
     margin: 3px 0;
     font-size: 13px;
     font-weight: 200;
+}
+
+#footer .sub-menu a {
+    color: var(--light-purple);
 }
 
 .social-media-container {

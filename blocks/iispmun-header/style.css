@@ -46,6 +46,7 @@ header .logo-title {
     font-size: 25px;
     font-weight: 800;
     margin-top: -8px;
+    color: var(--purple);
 }
 
 header .logo-title span {

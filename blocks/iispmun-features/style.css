@@ -21,14 +21,21 @@
 
     transition: all 0.2s ease;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .iispmun-features-container p:hover {
-    transform: scale(105%);
+    flex-grow: 3;
 }
 
 @media screen and (max-width: 560px) {
-    .iispmun-features-container {
+    .iispmun-features-container p {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .iispmun-features-container p {
+        font-size: 13px;
     }
 }

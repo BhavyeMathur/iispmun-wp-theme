@@ -41,6 +41,14 @@
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.iispmun-committees-overview-container p:hover,
+.iispmun-press-overview-container p:hover {
+    flex-grow: 3;
 }
 
 .iispmun-committees-overview-container p {

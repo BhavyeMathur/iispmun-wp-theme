@@ -1,5 +1,3 @@
-<?php wp_reset_postdata(); ?>
-
 <section id="footer">
     <header>
         <div class="logo-container">
@@ -15,7 +13,7 @@
                         Indus International School Pune
                     </div>
                     <div class="logo-title">
-                        Model <span>United Nations<span>
+                        Model <span>United Nations</span>
                     </div>
                 </a>
             </div>
@@ -23,13 +21,13 @@
 
         <div class="school-logos-container">
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/ib-logo.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ib-logo.png">
             </div>
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/ib-continuum.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ib-continuum.png">
             </div>
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/iisp-logo.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iisp-logo.png">
             </div>
         </div>
     </header>
@@ -47,7 +45,7 @@
             } else {
                 wp_nav_menu(
                     array(
-                        "theme_location" => "footer-default",
+                        "theme_location" => "footer",
                         "depth" => 2
                     )
                 );
@@ -57,19 +55,19 @@
         <div class="footer-info-container">
             <div>
                 <div class="social-media-container">
-                    <?php
-                    $socials_source = get_field("edition") ?: 'menu_' . get_nav_menu_locations()["footer-default"];
-                    foreach (get_field("socials", $socials_source) as $platform) { ?>
-                        <a href="<?php the_field("url", $platform); ?>">
-                            <div>
-                                <img src="<?php the_field("icon", $platform); ?>">
-                            </div>
-                        </a>
-                        <?php
-                    }
-                    ?>
+<!--                    --><?php
+//                    $socials_source = get_field("edition") ?: 'menu_' . get_nav_menu_locations()["footer"];
+//                    foreach (get_field("socials", $socials_source) as $platform) { ?>
+<!--                        <a href="--><?php //the_field("url", $platform); ?><!--">-->
+<!--                            <div>-->
+<!--                                <img src="--><?php //the_field("icon", $platform); ?><!--">-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!--                        --><?php
+//                    }
+//                    ?>
                 </div>
-                <div class="email">contact@iispmun.in</div>
+                <div class="email">contact@iispmun.com</div>
             </div>
             <div class="address">
                 576, Bhukum, Near Manas Lake<br>
@@ -91,6 +89,6 @@
     </div>
 </section>
 
-<?php wp_footer(); ?>
-</body>
-</html>
+<style>
+    <?php include "style.css"; ?>
+</style>

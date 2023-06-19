@@ -24,3 +24,13 @@ require_once get_theme_file_path( "inc/register-iispmun_people.php" );
 
 require_once get_theme_file_path( "inc/register-block-styles.php" );
 require_once get_theme_file_path( "inc/register-block-patterns.php" );
+
+function register_menus() {
+    register_nav_menus(
+        array(
+            "header" => ( "Header Menu" ),
+            "footer" => ( "Footer Menu" )
+        )
+    );
+}
+add_action( "init", "register_menus");
