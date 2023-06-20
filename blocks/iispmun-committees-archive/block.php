@@ -30,7 +30,7 @@ if ($the_query->have_posts()):
                         <div>
                             <a href="<?php the_permalink(); ?>">
                                 <div>
-                                    <img src="<?php the_field("logo"); ?>">
+                                    <img class="img-full-size" src="<?php the_field("logo"); ?>">
                                 </div>
                                 <div><h2><?php the_field("acronym"); ?></h2></div>
                                 <div class="delegates">

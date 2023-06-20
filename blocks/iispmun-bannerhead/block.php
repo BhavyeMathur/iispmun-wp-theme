@@ -5,7 +5,7 @@
     <div class="iispmun-title-container">
         <b class="text-uppercase iispmun-supertitle"><?php block_field("supertitle"); ?></b>
 
-        <img style="margin: 20px 0" class="img-full-width" src="<?php block_field("title"); ?>">
+        <img style="margin: 20px 0" class="img-full-size" src="<?php block_field("title"); ?>">
 
         <p class="iispmun-subtitle">
             <b><span><?php block_field("subtitle-bold"); ?></span></b>

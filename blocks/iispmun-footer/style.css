@@ -89,12 +89,6 @@
     transform: scale(1.1);
 }
 
-.social-media-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .footer-info-container {
     text-align: right;
     font-size: 13px;

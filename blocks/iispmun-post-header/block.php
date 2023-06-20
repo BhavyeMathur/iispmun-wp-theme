@@ -2,9 +2,9 @@
 
 <div class="blog-header">
     <?php if (get_post_type() == "iispmun_people"): ?>
-        <img style="object-position: bottom" src="<?php the_field("profile_picture"); ?>">
+        <img class="img-full-size" style="object-position: bottom" src="<?php the_field("profile_picture"); ?>">
     <?php else: ?>
-        <img src="<?php the_post_thumbnail_url(); ?>">
+        <img class="img-full-size" src="<?php the_post_thumbnail_url(); ?>">
     <?php endif; ?>
 
     <div class="text">

@@ -24,7 +24,7 @@
         <div class="letter-container" style="display: <?php echo ($i == 1 ? "flex" : "none") ?>">
             <div class="letter-dp expand-on-hover">
                 <a href="<?php the_permalink(); ?>">
-                    <img src="<?php the_field("profile_picture"); ?>">
+                    <img class="img-full-size" src="<?php the_field("profile_picture"); ?>">
                 </a>
             </div>
 
@@ -45,7 +45,7 @@
             ?>
             <a class="dp-container expand-on-hover" onclick="showLetter(<?php echo $i; ?>)">
                 <div>
-                    <img src="<?php the_field("profile_picture", $post); ?>">
+                    <img class="img-full-size" src="<?php the_field("profile_picture", $post); ?>">
                 </div>
             </a>
             <?php

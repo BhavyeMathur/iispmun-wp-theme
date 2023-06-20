@@ -49,8 +49,7 @@ body {
     color: #999;
 
     max-width: 800px;
-    width: 90%;
-    margin: auto;
+    width: 100%;
 }
 
 .read-more {
@@ -106,9 +105,10 @@ body {
     width: 40%;
 }
 
-.img-full-width {
+.img-full-size {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 #sb_instagram {

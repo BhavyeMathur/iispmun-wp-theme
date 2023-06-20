@@ -8,16 +8,12 @@
 
 .blog-header img {
     filter: brightness(0.5);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
     opacity: 0.3;
 }
 
 .blog-header .text {
     position: absolute;
-    width: 100%
+    width: 100%;
 }
 
 .blog-header .subtitle {
