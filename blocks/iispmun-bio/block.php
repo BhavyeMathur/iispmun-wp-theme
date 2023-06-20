@@ -1,7 +1,7 @@
 <?php
 if (block_value("profile-url")) {
     $bio_id = url_to_postid(block_value("profile-url"));
-} else {
+} elseif (get_post_type() == "iispmun_people"){
     $bio_id = get_the_ID();
 }
 ?>
@@ -25,7 +25,10 @@ if (block_value("profile-url")) {
 
         <div class="col-md-9 bio-container">
             <?php
-            if (block_value("show-position")): ?>
+            if (get_post_type() == "iispmun_committees"): ?>
+                <strong><?php the_field("acronym"); ?> Committee <?php echo $position; ?>
+                </strong>
+            <?php elseif (block_value("show-position")): ?>
                 <strong><?php the_field("position", $bio_id); ?>
                 </strong>
             <?php else: ?>
