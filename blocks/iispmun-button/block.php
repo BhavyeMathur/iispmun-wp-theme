@@ -1,4 +1,4 @@
-<form action="<?php block_field("link"); ?>">
+<form action="<?php block_field("link"); ?>" style="width: fit-content; margin: auto">
     <button class="iispmun-button" style="border-radius: <?php block_field("border-radius"); ?>px">
         <b class="text-uppercase"><?php block_field("text"); ?></b>
     </button>

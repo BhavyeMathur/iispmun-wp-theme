@@ -11,4 +11,5 @@ function load_styles()
 }
 
 add_editor_style(get_template_directory_uri() . "/assets/css/single.css");
+
 add_action("wp_enqueue_scripts", "load_styles");

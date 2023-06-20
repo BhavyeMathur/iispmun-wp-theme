@@ -97,6 +97,10 @@ hr {
     max-width: 20% !important;
 }
 
+.max-width-100 {
+    max-width: 100% !important;
+}
+
 .max-width-500 {
     max-width: 500px !important;
 }
@@ -135,6 +139,14 @@ hr {
 
 .width-90 {
     width: 90% !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.square {
+    aspect-ratio: 1;
 }
 
 .img-full-size {

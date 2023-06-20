@@ -55,7 +55,7 @@
           "color": "#FFCC66"
         }
       ],
-      "custom": false,
+      "custom": true,
       "customDuotone": false,
       "customGradient": false,
       "defaultGradients": true,
