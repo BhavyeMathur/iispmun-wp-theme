@@ -1,0 +1,87 @@
+#iispmun-instagram .bio-container {
+    display: flex;
+    align-items: center;
+}
+
+#iispmun-instagram .handle-container {
+    display: flex;
+    font-weight: 700;
+}
+
+#iispmun-instagram .handle-container p {
+    margin: 0;
+    color: var(--dark-purple);
+    padding: 5px 0;
+}
+
+#iispmun-instagram .handle-container div {
+    color: #fff;
+
+    padding: 5px 15px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+#iispmun-instagram .follow {
+    background: #74B461;
+}
+
+#iispmun-instagram .follow-mobile {
+    display: none;
+}
+
+#iispmun-instagram .message {
+    background: #321F42;
+    color: #fff;
+}
+
+#iispmun-instagram .name {
+    color: var(--dark-purple);
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+#iispmun-instagram .type {
+    color: #A8A8BF;
+}
+
+#iispmun-instagram .link {
+    color: #A8A8BF;
+    font-weight: 700;
+}
+
+#iispmun-instagram .row > div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+#iispmun-instagram .dp-container {
+    margin: min(1vw, 25px);
+    max-width: 200px;
+}
+
+#iispmun-instagram img {
+    border-radius: 50%;
+    padding: 20px
+}
+
+@media (max-width: 750px) {
+    #iispmun-instagram .follow {
+        display: none;
+    }
+
+    #iispmun-instagram .follow-mobile {
+        display: block !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #iispmun-instagram .row > div:first-child {
+        margin-bottom: 40px;
+    }
+
+    #iispmun-instagram .bio-container {
+        justify-content: center;
+    }
+}

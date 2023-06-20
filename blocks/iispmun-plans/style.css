@@ -1,5 +1,5 @@
 #iispmun-plans {
-    width: 70%;
+    width: 95%;
     max-width: 700px;
     margin: auto;
 }
@@ -53,8 +53,9 @@
 }
 
 @media screen and (max-width: 590px) {
-    .column {
+    #iispmun-plans .column {
         width: 100%;
+        padding: 3px;
     }
 
     #iispmun-plans .number {

@@ -42,6 +42,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+hr {
+    height: 3px !important;
+}
+
 .paragraph {
     text-align: justify;
     font-size: 16px;
@@ -93,6 +97,10 @@ body {
     max-width: 20% !important;
 }
 
+.max-width-500 {
+    max-width: 500px !important;
+}
+
 .max-width-700 {
     max-width: 700px !important;
 }
@@ -102,23 +110,23 @@ body {
 }
 
 .width-30 {
-    width: 30%;
+    width: 30% !important;
 }
 
 .width-40 {
-    width: 40%;
+    width: 40% !important;
+}
+
+.width-80 {
+    width: 80% !important;
 }
 
 .width-85 {
-    width: 85%;
-}
-
-.width-85 {
-    width: 85%;
+    width: 85% !important;
 }
 
 .width-90 {
-    width: 90%;
+    width: 90% !important;
 }
 
 .img-full-size {
