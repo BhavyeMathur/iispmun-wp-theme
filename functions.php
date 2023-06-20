@@ -17,6 +17,7 @@ require_once get_theme_file_path( "inc/load-fonts.php" );
 // require_once get_theme_file_path( "inc/register-iispmun_editions.php" );
 require_once get_theme_file_path( "inc/register-iispmun_committees.php" );
 require_once get_theme_file_path( "inc/register-iispmun_people.php" );
+require_once get_theme_file_path( "inc/register-iispmun_resources.php" );
 //require_once get_theme_file_path( "inc/register-iispmun_socials.php" );
 //require_once get_theme_file_path( "inc/register-menus.php" );
 
