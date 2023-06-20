@@ -10,6 +10,7 @@
     filter: brightness(0.5);
     width: 100%;
     height: 100%;
+    object-fit: cover;
 
     opacity: 0.3;
 }
@@ -39,5 +40,5 @@
 
 .blog-header h1 {
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 700;
 }
