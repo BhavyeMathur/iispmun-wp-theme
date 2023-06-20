@@ -1,0 +1,56 @@
+#iispmun-bio {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+#iispmun-bio .bio-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#iispmun-bio img {
+    aspect-ratio: 0.9;
+}
+
+#iispmun-bio .bio-name-container {
+    background: var(--dark-purple);
+    color: #fff;
+
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+
+    width: 100%;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+}
+
+#iispmun-bio .name {
+    margin: 0;
+    padding: 10px 0;
+}
+
+#iispmun-bio .bio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-left: 30px;
+}
+
+#iispmun-bio .bio-container strong {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--purple);
+}
+
+#iispmun-bio .bio-container p {
+    margin: 0;
+}
+
+.wp-block-post-content p:first-child {
+    display: none
+}

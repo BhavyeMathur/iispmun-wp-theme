@@ -1,16 +1,36 @@
 <section id="iispmun-bio" class="container-fluid">
     <div class="row">
         <div class="col-sm-3">
-            <div class="card-shadow expand-on-hover">
-                <img class="img-full-size" src="<?php the_field("profile_picture"); ?>">
-                <p class="name"><?php the_title(); ?></p>
+            <div class="bio-card card-shadow expand-on-hover">
+                <div>
+                    <img class="img-full-size" src="<?php the_field("profile_picture"); ?>">
+                </div>
+                <div class="bio-name-container">
+                    <p class="name">
+                        <?php the_title();?>
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="col-sm-9">
-            <strong>About Rajveer</strong>
+        <div class="col-sm-9 bio-container">
+            <strong>About <?php
+                $title= get_the_title();
+                $arr = explode(' ',trim($title));
+                echo $arr[0];
+                ?>
+            </strong>
             <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                <?php
+                global $post;
+                $post_content = $post->post_content;
+                $post_content = apply_filters("the_content", $post_content);
+                $post_content = str_replace("</p>", "", $post_content);
+                $paras = explode("<p>", $post_content);
+                array_shift($paras);
+
+                echo $paras[0];
+                ?>
             </p>
         </div>
     </div>
@@ -18,16 +38,4 @@
 
 <style>
     <?php include "style.css"; ?>
-
-    #iispmun-bio .name {
-        background: var(--dark-purple);
-        color: #fff;
-
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 700;
-
-        height: 30%;
-    }
 </style>
