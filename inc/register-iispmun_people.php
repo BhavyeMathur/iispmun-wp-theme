@@ -2,7 +2,7 @@
 
 function register_iispmun_people()
 {
-    register_post_type( "iispmun_people", array(
+    register_post_type("iispmun_people", array(
             "labels" => array(
                 "name" => "People",
                 "singular_name" => "Person"
@@ -11,8 +11,9 @@ function register_iispmun_people()
             "description" => "All the people involved in the IISP MUN",
             "menu_icon" => "dashicons-businessperson",
 
-            "supports" => array( "custom-fields", "title", "editor" ),
-            "rewrite" => array( "slug" => "people" ),
+            "supports" => array("custom-fields", "title", "editor"),
+            "taxonomies" => array("category"),
+            "rewrite" => array("slug" => "people"),
 
             "public" => true,
             "has_archive" => false,
@@ -21,4 +22,4 @@ function register_iispmun_people()
     );
 }
 
-add_action( "init", "register_iispmun_people");
+add_action("init", "register_iispmun_people");
