@@ -36,6 +36,7 @@
 .iispmun-committees-cards-container.dragging {
     cursor: grab;
     scroll-behavior: auto;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 700px) {

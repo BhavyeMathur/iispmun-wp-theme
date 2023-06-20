@@ -109,6 +109,14 @@ hr {
     max-width: 800px !important;
 }
 
+.max-width-900 {
+    max-width: 900px !important;
+}
+
+.max-width-1000 {
+    max-width: 1000px !important;
+}
+
 .width-30 {
     width: 30% !important;
 }

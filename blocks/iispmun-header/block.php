@@ -1,4 +1,4 @@
-<header class="card-shadow">
+<header id="header" class="card-shadow">
     <div class="logo-container">
         <div class="logo">
             <?php the_custom_logo();?>

@@ -7,6 +7,11 @@ header {
     z-index: 999;
 }
 
+#header {
+    position: relative;
+    background: #fff;
+}
+
 header .logo-container {
     display: flex;
     align-items: center;
