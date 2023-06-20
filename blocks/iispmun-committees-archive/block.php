@@ -1,17 +1,26 @@
 <?php
 
-$the_query = new WP_Query(array(
-    'posts_per_page' => -1,
-    'post_type' => 'iispmun_committees'));
+if (is_archive()):
+    $the_query = new WP_Query(array(
+        "posts_per_page" => -1,
+        "post_type" => "iispmun_committees"));
+else:
+    $the_query = new WP_Query(array(
+        "posts_per_page" => 1,
+        "post_type" => "iispmun_committees",
+        "page_id" => get_the_ID()));
+endif;
 
 if ($the_query->have_posts()):
     while ($the_query->have_posts()):
         $the_query->the_post(); ?>
 
         <section class="single-committee">
+            <?php if (is_archive()): ?>
             <div class="image-container">
                 <img class="committee-image" src="<?php the_post_thumbnail_url(); ?>">
             </div>
+            <?php endif; ?>
 
             <div class="container">
                 <a href="<?php the_permalink(); ?>">

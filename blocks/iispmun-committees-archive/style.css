@@ -52,7 +52,8 @@
     font-size: 15vw;
     font-weight: 900;
 
-    display: none
+    display: none;
+    text-align: center;
 }
 
 .grade {
