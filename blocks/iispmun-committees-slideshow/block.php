@@ -4,29 +4,31 @@
         <div class="iispmun-committees-cards-container">
             <?php
             $args = array(
-                "post_type"      => "iispmun_committees",
+                "post_type" => "iispmun_committees",
                 "posts_per_page" => -1,
             );
-            
+
             $loop = new WP_Query($args);
 
-            while ( $loop->have_posts() ):
+            while ($loop->have_posts()):
                 $loop->the_post();
                 ?>
                 <div class="iispmun-committees-card-container">
-                    <div class="iispmun-committee-card expand-on-hover">
-                        <img src="<?php the_post_thumbnail(); ?>">
-                        <div class="iispmun-committee-card-title">
-                            <p><?php the_field("acronym"); ?></p>
-                            <small><?php the_field("difficulty"); ?></small>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="iispmun-committee-card expand-on-hover">
+                            <?php the_post_thumbnail(); ?>
+                            <div class="iispmun-committee-card-title">
+                                <p><?php the_field("acronym"); ?></p>
+                                <small><?php the_field("difficulty"); ?></small>
+                            </div>
                         </div>
-                    </div>
-                    <div class="iispmun-committee-card-subtitle">
-                        <p>
-                            <span>Topic</span>
-                            <span><?php the_field("short_agenda"); ?></span>
-                        </p>
-                    </div>
+                        <div class="iispmun-committee-card-subtitle">
+                            <p>
+                                <span>Topic</span>
+                                <span><?php the_field("short_agenda"); ?></span>
+                            </p>
+                        </div>
+                    </a>
                 </div>
             <?php endwhile; ?>
         </div>

@@ -4,7 +4,8 @@ $query = new WP_Query(
     array(
         "numberposts" => block_value("number"),
         "posts_per_page" => block_value("number"),
-        "post_status" => "publish"
+        "post_status" => "publish",
+        "category_name" => get_field("acronym"),
     )
 );
 
