@@ -4,42 +4,6 @@
     margin: auto;
 }
 
-#iispmun-bio .bio-card-container {
-    display: flex;
-    align-items: center;
-}
-
-#iispmun-bio .bio-card {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: auto;
-}
-
-#iispmun-bio img {
-    aspect-ratio: 0.9;
-}
-
-#iispmun-bio .bio-name-container {
-    background: var(--dark-purple);
-    color: #fff;
-
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-
-    width: 100%;
-    justify-content: center;
-
-    display: flex;
-    align-items: center;
-}
-
-#iispmun-bio .name {
-    margin: 0;
-    padding: 10px 0;
-}
-
 #iispmun-bio .bio-container {
     display: flex;
     flex-direction: column;
@@ -63,7 +27,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    #iispmun-bio .bio-card-container {
+    #iispmun-bio .iispmun-card-container {
         margin-bottom: 30px;
     }
 

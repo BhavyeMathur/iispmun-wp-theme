@@ -1,0 +1,8 @@
+#iispmun-committee-chairpersons .iispmun-card-title-container p {
+    font-weight: 300;
+}
+
+#iispmun-committee-chairpersons .iispmun-card-title-container p span {
+    color: var(--yellow);
+    font-weight: 700;
+}

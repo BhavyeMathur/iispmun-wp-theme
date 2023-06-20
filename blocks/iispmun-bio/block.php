@@ -1,12 +1,12 @@
 <section id="iispmun-bio" class="container-fluid">
     <div class="row">
-        <div class="col-md-3 bio-card-container">
-            <div class="bio-card card-shadow expand-on-hover">
+        <div class="col-md-3 iispmun-card-container">
+            <div class="iispmun-card card-shadow expand-on-hover">
                 <div>
                     <img class="img-full-size" src="<?php the_field("profile_picture"); ?>">
                 </div>
-                <div class="bio-name-container">
-                    <p class="name">
+                <div class="iispmun-card-title-container">
+                    <p>
                         <?php the_title();?>
                     </p>
                 </div>
@@ -37,5 +37,6 @@
 </section>
 
 <style>
+    <?php include __DIR__ . "/../card.css"; ?>
     <?php include "style.css"; ?>
 </style>
