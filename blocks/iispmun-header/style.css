@@ -123,8 +123,8 @@ header .menu li .sub-menu {
     z-index: 999;
 
     top: 100%;
-    width: max-content;
-    padding: 5px 15px;
+    width: 150px;
+    padding: 10px 15px;
 
     background: #fff;
     border-radius: 15px;
