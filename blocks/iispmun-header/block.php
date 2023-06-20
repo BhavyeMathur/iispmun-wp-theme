@@ -19,22 +19,12 @@
     </div>
 
     <?php
-    if ( get_field( "edition" ) ) {
-        wp_nav_menu(
-            array(
-                "menu" => get_field( "header_navigation_menu", get_field( "edition" ) ),
-                "depth" => 2
-            )
-        );
-    }
-    else {
-        wp_nav_menu(
-            array(
-                "theme_location" => "header" ,
-                "depth" => 2
-            )
-        );
-    }
+    wp_nav_menu(
+        array(
+            "theme_location" => "header" ,
+            "depth" => 2
+        )
+    );
     ?>
 </header>
 
