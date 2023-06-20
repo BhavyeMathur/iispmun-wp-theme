@@ -1,12 +1,19 @@
 #iispmun-bio {
-    width: 90%;
+    width: 80%;
     max-width: 800px;
     margin: auto;
+}
+
+#iispmun-bio .bio-card-container {
+    display: flex;
+    align-items: center;
 }
 
 #iispmun-bio .bio-card {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
+    margin: auto;
 }
 
 #iispmun-bio img {
@@ -53,4 +60,14 @@
 
 .wp-block-post-content p:first-child {
     display: none
+}
+
+@media screen and (max-width: 768px) {
+    #iispmun-bio .bio-card-container {
+        margin-bottom: 30px;
+    }
+
+    #iispmun-bio .bio-container {
+        padding: 0;
+    }
 }

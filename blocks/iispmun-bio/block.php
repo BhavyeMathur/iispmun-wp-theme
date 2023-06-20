@@ -1,6 +1,6 @@
 <section id="iispmun-bio" class="container-fluid">
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-md-3 bio-card-container">
             <div class="bio-card card-shadow expand-on-hover">
                 <div>
                     <img class="img-full-size" src="<?php the_field("profile_picture"); ?>">
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="col-sm-9 bio-container">
+        <div class="col-md-9 bio-container">
             <strong>About <?php
                 $title= get_the_title();
                 $arr = explode(' ',trim($title));
