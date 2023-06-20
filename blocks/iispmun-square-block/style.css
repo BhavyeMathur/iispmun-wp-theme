@@ -1,0 +1,38 @@
+#iispmun-square-block {
+    padding: 30px;
+    height: 100%;
+}
+
+#iispmun-square-block strong {
+    font-size: 50px;
+}
+
+#iispmun-square-block p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    #iispmun-square-block {
+        display: flex;
+        align-items: center;
+
+        padding: 15px 20px;
+        border-radius: 15px;
+    }
+
+    #iispmun-square-block strong {
+        font-weight: 800;
+        font-size: max(2vw, 25px);
+
+        margin-left: 4vw;
+    }
+
+    #iispmun-square-block p {
+        margin-left: 5vw;
+        margin-bottom: 0;
+
+        font-size: max(2vw, 15px);
+        text-transform: uppercase;
+    }
+}
