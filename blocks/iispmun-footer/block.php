@@ -54,19 +54,31 @@
         <div class="footer-info-container">
             <div>
                 <div class="social-media-container">
-                    <!--                    --><?php
-                    //                    $socials_source = get_field("edition") ?: 'menu_' . get_nav_menu_locations()["footer"];
-                    //                    foreach (get_field("socials", $socials_source) as $platform) { ?>
-                    <!--                        <a href="--><?php //the_field("url", $platform); ?><!--">-->
-                    <!--                            <div>-->
-                    <!--                                <img src="--><?php //the_field("icon", $platform); ?><!--">-->
-                    <!--                            </div>-->
-                    <!--                        </a>-->
-                    <!--                        --><?php
-                    //                    }
-                    //                    ?>
+                    <a href="https://www.instagram.com/iispmun">
+                        <div>
+                            <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/instagram.svg">
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/iisp-mun/">
+                        <div>
+                            <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/linkedin.svg">
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/induspune/">
+                        <div>
+                            <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/facebook.svg">
+                        </div>
+                    </a>
+
+                    <a href="https://pune.indusschool.com/">
+                        <div>
+                            <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/iisp.svg">
+                        </div>
+                    </a>
                 </div>
-                <div class="email">contact@iispmun.com</div>
+                <div class="email"><a href="mailto:contact@iispmun.com">contact@iispmun.com</a></div>
             </div>
             <div class="address">
                 576, Bhukum, Near Manas Lake<br>

@@ -31,8 +31,8 @@
     margin: 0 !important;
 }
 
-button.alm-load-more-btn {
-    padding: 10px 0
+button.alm-load-more-btn.more {
+    margin: 10px 0 30px;
 }
 
 button.alm-load-more-btn.done {
