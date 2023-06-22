@@ -1,7 +1,7 @@
 <?php
 if (block_value("profile-url")) {
     $bio_id = url_to_postid(site_url(block_value("profile-url")));
-} elseif (get_post_type() == "iispmun_people"){
+} elseif (get_post_type() == "iispmun_people") {
     $bio_id = get_the_ID();
 }
 ?>
@@ -24,21 +24,39 @@ if (block_value("profile-url")) {
         </div>
 
         <div class="col-md-9 bio-container">
-            <?php
-            if (get_post_type() == "iispmun_committees"): ?>
-                <strong><?php the_field("acronym"); ?> Committee <?php echo $position; ?>
-                </strong>
-            <?php elseif (block_value("show-position")): ?>
-                <strong><?php the_field("position", $bio_id); ?>
-                </strong>
-            <?php else: ?>
-                <strong>About <?php
-                    $title = get_the_title($bio_id);
-                    $arr = explode(' ', trim($title));
-                    echo $arr[0];
-                    ?>
-                </strong>
-            <?php endif; ?>
+            <div class="social-media-container" style="justify-content: left">
+                <?php
+                if (get_post_type() == "iispmun_committees"): ?>
+                    <strong><?php the_field("acronym"); ?> Committee <?php echo $position; ?>
+                    </strong>
+                <?php elseif (block_value("show-position")): ?>
+                    <strong><?php the_field("position", $bio_id); ?>
+                    </strong>
+                <?php else: ?>
+                    <strong>About <?php
+                        $title = get_the_title($bio_id);
+                        $arr = explode(' ', trim($title));
+                        echo $arr[0];
+                        ?>
+                    </strong>
+                <?php endif; ?>
+
+                <?php if (get_field("linkedin", $bio_id)):?>
+                    <a href="<?php the_field("linkedin", $bio_id)?>">
+                        <div>
+                            <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/linkedin.svg">
+                        </div>
+                    </a>
+                <?php endif; ?>
+
+                <?php if (get_field("instagram", $bio_id)):?>
+                <a href="<?php the_field("instagram", $bio_id)?>">
+                    <div>
+                        <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/instagram.svg">
+                    </div>
+                </a>
+                <?php endif; ?>
+            </div>
             <p class="paragraph">
                 <?php
                 global $post;
