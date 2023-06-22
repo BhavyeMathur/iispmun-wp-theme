@@ -1,6 +1,6 @@
 <?php
 if (block_value("profile-url")) {
-    $bio_id = url_to_postid(block_value("profile-url"));
+    $bio_id = url_to_postid(site_url(block_value("profile-url")));
 } elseif (get_post_type() == "iispmun_people"){
     $bio_id = get_the_ID();
 }

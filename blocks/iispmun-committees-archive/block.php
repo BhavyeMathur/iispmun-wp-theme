@@ -52,7 +52,9 @@ if ($the_query->have_posts()):
                     <div class="committee-body">
                         <strong><?php the_field("agenda"); ?></strong>
                         <p class="agenda paragraph"><?php the_field("agenda_description"); ?></p>
+                        <?php if (is_archive()): ?>
                         <a href="<?php the_permalink(); ?>"><p class="read-more">Read More</p></a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
