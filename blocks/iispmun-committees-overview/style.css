@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.iispmun-committees-overview-container a {
+    color: #fff;
+}
+
 #iispmun-committees-overview > div {
     width: 50%;
     margin: 15px 20px;

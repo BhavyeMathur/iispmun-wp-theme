@@ -1,19 +1,25 @@
 <section id="iispmun-committees-overview">
     <div>
         <div class="iispmun-committees-overview-heading" style="background: #321F42">
-            8 Committees
+            <?php
+            $committees = wp_count_posts("iispmun_committees")->publish;
+            echo $committees;
+            ?> Committees
         </div>
         <div class="iispmun-committees-overview-container">
-            <p>UNGA</p>
-            <p>WEF</p>
-            <p>UNOOSA</p>
+            <?php
+            $args = array(
+                "post_type"      => "iispmun_committees",
+                "posts_per_page" => -1,
+            );
 
-            <p>ECOSOC</p>
-            <p>DISEC</p>
-            <p>UNHRC</p>
+            $loop = new WP_Query($args);
 
-            <p>Lok Sabha</p>
-            <p>UNSC</p>
+            while ( $loop->have_posts() ):
+            $loop->the_post();
+            ?>
+                <p><a href="<?php the_permalink();?>"><?php the_field("acronym");?></a></p>
+            <?php endwhile;?>
         </div>
     </div>
 
@@ -29,8 +35,10 @@
             <p>Times of India</p>
             <p>Reuters</p>
 
+            <?php if ($committees > 6): ?>
             <p>Euronews</p>
             <p>Sky News</p>
+            <?php endif;?>
         </div>
     </div>
 </section>
