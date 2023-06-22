@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900");
+
 :root {
     --lightest-purple: #A8A8BF;
     --light-purple: #71718D;
@@ -7,6 +9,10 @@
 
     --light-green: #74B461;
     --yellow: #FFCC66;
+}
+
+body {
+    font-family: "Inter", sans-serif !important;
 }
 
 a {
@@ -36,10 +42,6 @@ h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: #20202E;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
 }
 
 hr {
