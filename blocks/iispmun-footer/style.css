@@ -203,6 +203,10 @@
 }
 
 @media(max-width: 480px) {
+    #footer .logo-text {
+        margin: 0;
+    }
+
     #footer .logo-shorttitle {
         display: none;
     }
