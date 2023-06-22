@@ -101,7 +101,6 @@
       "letterSpacing": true,
       "textDecoration": true,
       "textTransform": true,
-      "fontSizes": [],
       "fontFamilies": [
         {
           "name": "System",
