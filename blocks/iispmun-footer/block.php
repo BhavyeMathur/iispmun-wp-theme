@@ -21,13 +21,21 @@
 
         <div class="school-logos-container">
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ib-logo.png">
+                <a href="https://www.ibo.org/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ib-logo.png">
+                </a>
             </div>
+
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ib-continuum.png">
+                <a href="https://www.ibo.org/programmes/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ib-continuum.png">
+                </a>
             </div>
+
             <div class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iisp-logo.png">
+                <a href="https://pune.indusschool.com/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/iisp-logo.png">
+                </a>
             </div>
         </div>
     </header>
@@ -46,17 +54,17 @@
         <div class="footer-info-container">
             <div>
                 <div class="social-media-container">
-<!--                    --><?php
-//                    $socials_source = get_field("edition") ?: 'menu_' . get_nav_menu_locations()["footer"];
-//                    foreach (get_field("socials", $socials_source) as $platform) { ?>
-<!--                        <a href="--><?php //the_field("url", $platform); ?><!--">-->
-<!--                            <div>-->
-<!--                                <img src="--><?php //the_field("icon", $platform); ?><!--">-->
-<!--                            </div>-->
-<!--                        </a>-->
-<!--                        --><?php
-//                    }
-//                    ?>
+                    <!--                    --><?php
+                    //                    $socials_source = get_field("edition") ?: 'menu_' . get_nav_menu_locations()["footer"];
+                    //                    foreach (get_field("socials", $socials_source) as $platform) { ?>
+                    <!--                        <a href="--><?php //the_field("url", $platform); ?><!--">-->
+                    <!--                            <div>-->
+                    <!--                                <img src="--><?php //the_field("icon", $platform); ?><!--">-->
+                    <!--                            </div>-->
+                    <!--                        </a>-->
+                    <!--                        --><?php
+                    //                    }
+                    //                    ?>
                 </div>
                 <div class="email">contact@iispmun.com</div>
             </div>

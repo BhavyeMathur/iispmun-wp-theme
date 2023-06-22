@@ -17,6 +17,28 @@
     color: #fff;
 }
 
+.alm-reveal:nth-of-type(even) #press:nth-of-type(odd) {
+    background-color: #20202E;
+}
+
+.alm-reveal:nth-of-type(even) #press:nth-of-type(odd) h3,
+.alm-reveal:nth-of-type(even) #press:nth-of-type(odd) .read-more {
+    color: #fff;
+}
+
+.alm-btn-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+button.alm-load-more-btn {
+    padding: 10px 0
+}
+
+button.alm-load-more-btn.done {
+    display: none;
+}
+
 #press .row {
     align-items: center;
     display: flex;

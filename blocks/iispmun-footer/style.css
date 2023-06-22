@@ -30,6 +30,11 @@
     margin: 0 10px;
 }
 
+.school-logos-container .logo a {
+    display: block;
+    height: 100%;
+}
+
 .mid-footer-container {
     display: flex;
     justify-content: space-between;

@@ -12,9 +12,9 @@
             while ( $loop->have_posts() ):
                 $loop->the_post();
                 ?>
-                <div class="iispmun-committees-card-container">
+                <a class="iispmun-committees-card-container" href="<?php the_permalink(); ?>">
                     <div class="iispmun-committee-card expand-on-hover">
-                        <img src="<?php the_post_thumbnail(); ?>">
+                        <?php the_post_thumbnail(); ?>
                         <div class="iispmun-committee-card-title">
                             <p><?php the_field("acronym"); ?></p>
                             <small><?php the_field("difficulty"); ?></small>
@@ -26,7 +26,7 @@
                             <span><?php the_field("short_agenda"); ?></span>
                         </p>
                     </div>
-                </div>
+                </a>
             <?php endwhile; ?>
         </div>
     </div>

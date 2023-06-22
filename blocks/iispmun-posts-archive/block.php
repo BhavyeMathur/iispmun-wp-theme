@@ -1,17 +1,23 @@
 <?php
 
 
-$query = new WP_Query(
-    array(
-        "numberposts" => block_value("number"),
-        "posts_per_page" => block_value("number"),
-        "post_status" => "publish",
-        "category_name" => block_value("category") ? block_value("category") : null,
-    )
-);
+if (block_value("number")):
+    $query = new WP_Query(
+        array(
+            "numberposts" => block_value("number"),
+            "posts_per_page" => block_value("number"),
+            "post_status" => "publish",
+            "category_name" => block_value("category") ? block_value("category") : null,
+        )
+    );
 
-include __DIR__ . "/../../parts/posts-archive.php";
-?>
+    include __DIR__ . "/../../parts/posts-archive.php";
+
+else:?>
+    <style>
+        <?php include __DIR__ . "/../../parts/posts-archive.css";?>
+    </style>
+<?php endif; ?>
 
 <style>
     <?php include "style.css"; ?>
