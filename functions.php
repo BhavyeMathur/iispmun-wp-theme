@@ -14,27 +14,15 @@ require_once get_theme_file_path( "inc/load-styles.php" );
 require_once get_theme_file_path( "inc/load-scripts.php" );
 require_once get_theme_file_path( "inc/load-fonts.php" );
 
-// require_once get_theme_file_path( "inc/register-iispmun_editions.php" );
 require_once get_theme_file_path( "inc/register-iispmun_committees.php" );
 require_once get_theme_file_path( "inc/register-iispmun_people.php" );
 require_once get_theme_file_path( "inc/register-iispmun_resources.php" );
-//require_once get_theme_file_path( "inc/register-iispmun_socials.php" );
-//require_once get_theme_file_path( "inc/register-menus.php" );
+require_once get_theme_file_path( "inc/register-menus.php" );
 
 //require_once get_theme_file_path( "inc/add-content-filters.php" );
 
 require_once get_theme_file_path( "inc/register-block-styles.php" );
 require_once get_theme_file_path( "inc/register-block-patterns.php" );
-
-function register_menus() {
-    register_nav_menus(
-        array(
-            "header" => ( "Header Menu" ),
-            "footer" => ( "Footer Menu" )
-        )
-    );
-}
-add_action( "init", "register_menus");
 
 add_filter(
     "excerpt_length",

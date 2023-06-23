@@ -16,7 +16,8 @@ function register_iispmun_committees()
 
             "public" => true,
             "has_archive" => true,
-            "show_in_rest" => true
+            "show_in_rest" => true,
+            "show_in_nav_menus" => true,
         )
     );
 }
