@@ -171,6 +171,10 @@ hr {
     flex-wrap: wrap;
 }
 
+#sbi_images .sbi_item {
+    aspect-ratio: 1;
+}
+
 #sb_instagram + style + style + p {
     display: none;
 }
