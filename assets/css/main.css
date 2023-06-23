@@ -167,7 +167,8 @@ hr {
 }
 
 #sbi_images {
-    display: contents;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #sb_instagram + style + style + p {
