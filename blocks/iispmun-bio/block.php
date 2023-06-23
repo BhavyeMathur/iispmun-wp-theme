@@ -33,11 +33,7 @@ if (block_value("profile-url")) {
                     <strong><?php the_field("position", $bio_id); ?>
                     </strong>
                 <?php else: ?>
-                    <strong>About <?php
-                        $title = get_the_title($bio_id);
-                        $arr = explode(' ', trim($title));
-                        echo $arr[0];
-                        ?>
+                    <strong>About <?php the_title($bio_id);?>
                     </strong>
                 <?php endif; ?>
 
