@@ -164,8 +164,10 @@ hr {
 #sb_instagram {
     max-width: none;
     font-size: 0;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+#sbi_images {
+    display: contents;
 }
 
 #sb_instagram + style + style + p {
