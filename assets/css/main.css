@@ -163,6 +163,17 @@ hr {
 
 #sb_instagram {
     max-width: none;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sb_instagram + style + style + p {
+    display: none;
+}
+
+.sbi_imgLiquid_error {
+    display: none !important;
 }
 
 .wp-block-post-title {
