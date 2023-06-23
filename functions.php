@@ -35,3 +35,11 @@ function register_menus() {
     );
 }
 add_action( "init", "register_menus");
+
+add_filter(
+    "excerpt_length",
+    function ( $length ) {
+        return 70;
+    },
+    500
+);

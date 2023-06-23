@@ -68,8 +68,12 @@
     color: var(--light-purple);
 }
 
-p.agenda {
+.committee-body p {
     margin: 15px 0 10px;
+
+    text-align: justify;
+    line-height: 2.2;
+    color: #CCC;
 }
 
 .committee-container {

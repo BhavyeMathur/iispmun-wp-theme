@@ -17,9 +17,9 @@ if ($the_query->have_posts()):
 
         <section class="single-committee">
             <?php if (is_archive()): ?>
-            <div class="image-container">
-                <img class="committee-image" src="<?php the_post_thumbnail_url(); ?>">
-            </div>
+                <div class="image-container">
+                    <img class="committee-image" src="<?php the_post_thumbnail_url(); ?>">
+                </div>
             <?php endif; ?>
 
             <div class="container">
@@ -51,9 +51,15 @@ if ($the_query->have_posts()):
 
                     <div class="committee-body">
                         <strong><?php the_field("agenda"); ?></strong>
-                        <p class="agenda paragraph"><?php the_field("agenda_description"); ?></p>
+                        <?php
+                        if (is_archive()):
+                            the_excerpt();
+                        else:
+                            the_content();
+                        endif;
+                        ?>
                         <?php if (is_archive()): ?>
-                        <a href="<?php the_permalink(); ?>"><p class="read-more">Read More</p></a>
+                            <a href="<?php the_permalink(); ?>"><p class="read-more">Read More</p></a>
                         <?php endif; ?>
                     </div>
                 </div>
