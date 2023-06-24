@@ -8,22 +8,25 @@
     max-width: 1000px;
 }
 
-#press:nth-of-type(even) {
+#press:nth-of-type(even),
+.alm-reveal:nth-of-type(even) #press:nth-of-type(odd){
     background-color: #20202E;
 }
 
 #press:nth-of-type(even) h3,
-#press:nth-of-type(even) .read-more {
-    color: #fff;
-}
-
-.alm-reveal:nth-of-type(even) #press:nth-of-type(odd) {
-    background-color: #20202E;
-}
-
+#press:nth-of-type(even) .read-more,
 .alm-reveal:nth-of-type(even) #press:nth-of-type(odd) h3,
 .alm-reveal:nth-of-type(even) #press:nth-of-type(odd) .read-more {
     color: #fff;
+}
+
+.alm-reveal:nth-of-type(even) #press:nth-of-type(even) {
+    background-color: #fff;
+}
+
+.alm-reveal:nth-of-type(even) #press:nth-of-type(even) h3,
+.alm-reveal:nth-of-type(even) #press:nth-of-type(even) .read-more {
+    color: #3C3C4F
 }
 
 .alm-btn-wrap {
