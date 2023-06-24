@@ -5,7 +5,7 @@
 
     $args = array(
         "post_type" => "iispmun_people",
-        "post_type" => "iispmun_people",
+        "orderby" => "date",
     );
 
     $loop = new WP_Query($args);

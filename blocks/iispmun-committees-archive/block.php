@@ -3,7 +3,8 @@
 if (is_archive()):
     $the_query = new WP_Query(array(
         "posts_per_page" => -1,
-        "post_type" => "iispmun_committees"));
+        "post_type" => "iispmun_committees",
+        "orderby" => "date"));
 else:
     $the_query = new WP_Query(array(
         "posts_per_page" => 1,
