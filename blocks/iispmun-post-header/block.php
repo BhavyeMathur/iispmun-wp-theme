@@ -34,8 +34,8 @@
             <?php
             if (get_post_type() == "iispmun_committees"):
                 the_field("acronym");
-            elseif (!get_post_type() == "iispmun_people"):
-                the_date();
+            elseif (get_post_type() != "iispmun_people"):
+                echo get_the_date();
             endif; ?>
         </h4>
     </div>
