@@ -193,3 +193,7 @@ hr {
     width: 80%;
     max-width: 800px;
 }
+
+#ajax-load-more {
+    margin-bottom: -16px;
+}
