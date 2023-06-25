@@ -5,11 +5,15 @@
 	margin: 50px auto !important;
 }
 
-.wp-block-post-content p {
+.wp-block-post-content p:nth-child(odd) {
 	text-indent: 30px;
-	text-align: justify;
-	color: #999;
-	line-height: 220%;
+}
+
+.wp-block-post-content p {
+	/*text-indent: 30px;*/
+	/*text-align: justify;*/
+	color: #666;
+	line-height: 200%;
 	font-size: 15px;
 }
 
