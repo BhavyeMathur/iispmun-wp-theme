@@ -9,6 +9,7 @@ remove_theme_support("core-block-patterns");
 add_editor_style( "assets/css/main.css" );
 
 require_once get_theme_file_path( "inc/remove-admin-bar.php" );
+require_once get_theme_file_path( "inc/configure-excerpt-length.php" );
 
 require_once get_theme_file_path( "inc/load-styles.php" );
 require_once get_theme_file_path( "inc/load-scripts.php" );
@@ -23,11 +24,3 @@ require_once get_theme_file_path( "inc/register-menus.php" );
 
 require_once get_theme_file_path( "inc/register-block-styles.php" );
 require_once get_theme_file_path( "inc/register-block-patterns.php" );
-
-add_filter(
-    "excerpt_length",
-    function ( $length ) {
-        return 70;
-    },
-    500
-);
