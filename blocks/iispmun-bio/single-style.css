@@ -1,0 +1,12 @@
+#iispmun-bio .bio-container p {
+    color: #666;
+    font-size: 15px;
+}
+
+.wp-block-post-content p:nth-child(odd) {
+    text-indent: 0 !important;
+}
+
+.wp-block-post-content p:nth-child(even) {
+    text-indent: 30px;
+}

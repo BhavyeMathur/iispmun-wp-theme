@@ -33,24 +33,26 @@ if (block_value("profile-url")) {
                     <strong><?php the_field("position", $bio_id); ?>
                     </strong>
                 <?php else: ?>
-                    <strong>About <?php echo get_the_title($bio_id);?>
+                    <strong>About <?php echo get_the_title($bio_id); ?>
                     </strong>
                 <?php endif; ?>
 
-                <?php if (get_field("linkedin", $bio_id)):?>
-                    <a href="<?php the_field("linkedin", $bio_id)?>">
+                <?php if (get_field("linkedin", $bio_id)): ?>
+                    <a href="<?php the_field("linkedin", $bio_id) ?>">
                         <div>
-                            <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/linkedin.svg">
+                            <img class="img-full-size"
+                                 src="<?php echo get_template_directory_uri() ?>/assets/images/linkedin.svg">
                         </div>
                     </a>
                 <?php endif; ?>
 
-                <?php if (get_field("instagram", $bio_id)):?>
-                <a href="<?php the_field("instagram", $bio_id)?>">
-                    <div>
-                        <img class="img-full-size" src="<?php echo get_template_directory_uri()?>/assets/images/instagram.svg">
-                    </div>
-                </a>
+                <?php if (get_field("instagram", $bio_id)): ?>
+                    <a href="<?php the_field("instagram", $bio_id) ?>">
+                        <div>
+                            <img class="img-full-size"
+                                 src="<?php echo get_template_directory_uri() ?>/assets/images/instagram.svg">
+                        </div>
+                    </a>
                 <?php endif; ?>
             </div>
             <p class="paragraph">
@@ -70,6 +72,11 @@ if (block_value("profile-url")) {
 </section>
 
 <style>
-    <?php include __DIR__ . "/../card.css"; ?>
-    <?php include "style.css"; ?>
+    <?php
+    include __DIR__ . "/../card.css";
+    include "style.css";
+
+    if (get_post_type() == "iispmun_people"):
+        include "single-style.css";
+    endif;?>
 </style>
