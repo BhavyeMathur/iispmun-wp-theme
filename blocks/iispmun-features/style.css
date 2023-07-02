@@ -21,7 +21,6 @@
 
     transition: all 0.2s ease;
     text-transform: uppercase;
-    cursor: pointer;
 }
 
 .iispmun-features-container p:hover {
