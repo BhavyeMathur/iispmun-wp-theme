@@ -36,6 +36,7 @@ function register_iispmun_press_update()
             "menu_icon" => "dashicons-video-alt",
 
             "supports" => array("custom-fields", "title", "thumbnail", "editor", "author"),
+            "taxonomies" => array("category"),
             "rewrite" => array("slug" => "press"),
 
             "public" => true,
@@ -60,9 +61,10 @@ function iispmun_press_updates_allowed_block_types( $allowed_blocks, $editor_con
             "core/paragraph",
             "core/heading",
             "core/quote",
-            "core/pullquote",
-            "core/list"
+            "core/list",
+            "genesis-custom-blocks/iispmun-live-quote"
         );
     }
 }
+
 add_filter( "allowed_block_types_all", "iispmun_press_updates_allowed_block_types", 25, 2 );
