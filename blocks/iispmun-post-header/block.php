@@ -26,7 +26,7 @@
             <?php if (get_post_type() == "iispmun_people"): ?>
                 <span class="author"><?php the_field("position"); ?></span>
             <?php elseif (get_post_type() == "iispmun_committees"): ?>
-                <span class="author">IISP MUN 2023</span>
+                <span class="author">IISP MUN 2024</span>
             <?php else: ?>
                 <span class="author"><?php the_author(); ?></span>
             <?php endif; ?>
