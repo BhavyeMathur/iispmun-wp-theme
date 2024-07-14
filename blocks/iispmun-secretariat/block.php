@@ -18,7 +18,7 @@ $query = new WP_Query(
         ?>
 
             <div class="col-md-4 iispmun-card-container">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php the_permalink(); ?>" style="width: 100%">
                     <div class="iispmun-card card-shadow expand-on-hover">
                         <div>
                             <img class="img-full-size" src="<?php the_field("profile_picture"); ?>">
